@@ -1,0 +1,11 @@
+.button {
+    height: 25%;
+    width: 20%;
+    position: absolute;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: rgb(61, 60, 60);
+    color: gold;
+}
