@@ -1,4 +1,6 @@
-## A starter for a project to figure out TypeScript
+#Aminamax
+
+### A starter for a project to figure out TypeScript
 
 Here are some useful links to get started:
 
@@ -7,6 +9,20 @@ Here are some useful links to get started:
 -   [TypeScript](https://www.typescriptlang.org/docs/home.html)
 
 -   [React](https://reactjs.org/docs/hello-world.html)
+
+
+### The Game
+Currently its simple -- click the box and perhaps you will see a personalized message! 
+
+#### Modes
+The game currently supports easy mode, however work is under way to support a hard mode as well.
+
+#### Easy Mode
+![EasyMode](./videos/EasyMode.gif)
+
+## Hard Mode
+![Hard Mode](./videos/HardMode.gif)
+
 
 ## Get Started
 
