@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from "react";
-import "./button.css";
+import "./GameButton.css";
 
 interface ButtonProps {
     // interface bc it defines a signature
@@ -9,7 +9,7 @@ interface ButtonProps {
     onClick: Dispatch<SetStateAction<Boolean>>;
 }
 
-export const Button: React.FC<ButtonProps> = ({ message, onClick, x, y }: ButtonProps) => {
+export const GameButton: React.FC<ButtonProps> = ({ message, onClick, x, y }: ButtonProps) => {
     const style = {
         top: `${x}%`,
         left: `${y}%`,

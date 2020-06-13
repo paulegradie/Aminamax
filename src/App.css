@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(45, 156, 156);
 }
 
 .app {
@@ -11,4 +11,13 @@ body {
 
     height: 100%;
     width: 100%;
+}
+
+.nav {
+    position: relative;
+    text-align: center;
+}
+
+.centerText {
+    text-align: center;
 }

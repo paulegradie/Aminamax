@@ -1,0 +1,16 @@
+.navButton {
+    height: 3rem;
+    width: 6rem;
+    padding: 0.5rem;
+    margin: 0.8rem;
+    border-radius: 5px;
+    background-color: rgb(98, 165, 209);
+}
+
+.link {
+    color: whitesmoke;
+    font-size: large;
+    font: outline;
+    font-style: normal;
+    text-decoration: none;
+}
