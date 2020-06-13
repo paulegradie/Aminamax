@@ -1,4 +1,4 @@
-#Aminamax
+# Aminamax
 
 ### A starter for a project to figure out TypeScript
 
