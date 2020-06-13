@@ -1,0 +1,2 @@
+EasyMode.gif
+HardMode.gif
