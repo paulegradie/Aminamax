@@ -1,42 +1,41 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Button } from "./components/button";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { NavButton } from "./components/NavButton";
+import { Easy } from "./gameModes/Easy";
+import { Hard } from "./gameModes/Hard";
 
-type Point = {
-    // type because it defines a return type
-    x: number;
-    y: number;
-};
-
-const randomPosition = (): Point => {
-    let x = Math.random() * 100;
-    if (x > 90 || x < 10) {
-        x = 0.23;
-    }
-    let y = Math.random() * 100;
-    if (y > 90 || y < 10) {
-        y = 0.46;
-    }
-    return { x: x, y: y };
-};
-
-const App: React.FC = () => {
-    const [clicked, setClicked] = useState<Boolean>(false);
-
-    if (clicked) {
-        setTimeout(() => {
-            setClicked(false);
-        }, 800);
-    }
-    const point = randomPosition();
-
+export const App = () => {
     return (
-        <div className="app">
-            {!clicked && (
-                <Button x={point.x} y={point.y} message={"Whats up Amin!"} onClick={setClicked} />
-            )}
-        </div>
+        <Router>
+            <div className="nav">
+                <NavButton to={"/"}>Home</NavButton>
+                <NavButton to={"/easy"}>Easy</NavButton>
+                <NavButton to={"/hard"}>Hard</NavButton>
+            </div>
+            <hr></hr>
+            <Switch>
+                <Route exact path="/">
+                    <Home />d
+                </Route>
+                <Route exact path="/easy">
+                    <Easy />
+                </Route>
+                <Route exact path="/hard">
+                    <Hard />
+                </Route>
+            </Switch>
+        </Router>
     );
 };
 
-export default App;
+const Home = () => {
+    return (
+        <div className="centerText">
+            <h1>The click me Game!</h1>
+            <p>There are two levels - Easy, and hard.</p>
+
+            <p>To win, you simply need to click the button!</p>
+        </div>
+    );
+};
